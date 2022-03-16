@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 20px auto;
+  input {
+    margin: 10px;
+    border-radius: 8px;
+  }
+  button {
+    width: 200px;
+    margin: auto;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(36, 36, 179);
+    #{$lps} {
+      background-color: rgba(rgb(36, 36, 179), 0.8);
+    }
+  }
+}

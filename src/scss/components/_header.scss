@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+header {
+  background-color: $brand-color;
+  @include flex-layout-row;
+  height: em(70);
+  padding: 0 em(10);
+  position: relative;
+  display: flex;
+}
+
+h1 {
+  margin-top: 15px;
+  flex-basis: 40%;
+  #{$lps} {
+    background-color: rgba(rgb(196, 122, 122), 0.3);
+  }
+  a {
+    color: $text-color-light;
+    text-decoration: none;
+  }
+}
